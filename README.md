@@ -26,7 +26,8 @@ Of course, implementation is Pure Python!
 from sumeval.metrics.rouge import RougeCalculator
 
 
-rouge = RougeCalculator(stopwords=True, lang="en")
+# At first, download model by `python3 -m spacy download en_core_web_sm`
+rouge = RougeCalculator(stopwords=True, lang="en_core_web_sm")
 
 rouge_1 = rouge.rouge_n(
             summary="I went to the Mars from my living town.",

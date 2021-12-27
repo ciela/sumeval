@@ -7,4 +7,4 @@ def get_lang(lang=""):
         return LangZH()
     else:
         from .lang_en import LangEN
-        return LangEN()
+        return LangEN(lang)
